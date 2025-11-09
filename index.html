@@ -3,13 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="data/mouton_fixe.webp">
-    
+    <link rel="icon" type="image/x-icon" href="data/images/mouton_fixe.webp">
+    <link rel="stylesheet" href="style.css">
     <!-- <script src="/public/script.js"></script> -->
-    <title>Killian Viguier - Portfolio</title>
+    <title>Portfolio</title>
 </head>
 
 <body class="fond" style="overflow-x:hidden;">
-    
+    <header>
+        <button class="buttons">About</button>
+        <button class="buttons">Portfolio</button>
+        <button class="buttons">Resume</button>
+    </header>
+    <div id="portfolio-body">
+
+        <!-- Title -->
+
+        <div id="title">
+            <h1 style="font-size: 4em;"><b>Killian Viguier</b></h1>
+            <p id="description">Student at the University of Montpellier, France. Specialized in image processing including video/image compression and deep learning,
+                3D programming and game development.</p>
+        </div>
+
+        <!-- Projects -->
+
+        <div class="cards">
+            <article class="card" href="https://azouuuu.itch.io/univherbcite">
+                <img src="data/images/univherbcite.png" alt="alt_project1">
+
+                <div class="card-content">
+                    <h2>Univ'Herbcité</h2>
+                    <p>
+                        A short serious game using Godot. The player follows a student trying to escape an apocalyptic campus ruined by vegetation.
+                        Learn new plants, fruits and the origin of the disaster to progress in the game.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card" href="https://github.com/VigKillian/Projet-Raytracing">
+                <img src="data/images/raytracing.png" alt="alt_project2">
+
+                <div class="card-content">
+                    <h2>Raytracing</h2>
+                    <p>
+                        A raytracing renderer in 3D using C++/OpenGL with acceleration structure (kd-tree), occlusion, textures and
+                        reflection/refraction effects.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+        <div class="cards">
+            <article class="card">
+                <img src="data/images/ocean_synthesis.png" alt="alt_project1">
+
+                <div class="card-content">
+                    <h2>Ocean synthesis</h2>
+                    <p>
+                        Supervised research project of an ocean synthesis in Godot. Based on Tessendorf waves simulation using oceanographic spectrum, with
+                        an implementation of a tiling and blending texture synthesis.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="data/images/Journey_home_by_Juliette_Taka.png" alt="alt_project2">
+
+                <div class="card-content">
+                    <h2 class="project-texts">Autre projet</h2>
+                    <p class="project-texts">
+                        Description rapide.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+    <footer style="text-indent: 1%;">Background Image : "Journey home" by Juliette Taka</footer>
 </body>
 </html>

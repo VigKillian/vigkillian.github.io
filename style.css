@@ -1,0 +1,130 @@
+body {
+    height: 100%;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("data/images/Journey_home_by_Juliette_Taka.png"); 
+    color: rgb(193, 190, 178);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#portfolio-body{
+    background-color: rgba(35, 30, 35, 0.9);
+    margin-left: 10%;
+    margin-right: 10%;
+    /* height: 100dvh; */
+    /* margin-bottom: 5%;
+    margin-top: 5%; */
+    flex: 1;
+    position: relative;
+    overflow: visible;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 95%,
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 95%,
+        transparent
+    );
+}
+
+
+footer{
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.7); 
+    color: rgb(193, 190, 178);
+    padding: 10px 0;
+}
+
+
+#title{
+    width: fit-content;
+    align-content: center;
+    padding-top: 10pt;
+    size: 160%;
+    margin: auto;
+    text-align: center;
+    color: rgb(193, 190, 178);
+    /* color: rgba(35, 30, 35); */
+}
+
+#description{
+    font-size: 1.5em;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+header{
+    width: 100%;
+    align-content: right;
+    background-color: rgba(10, 10, 10, 0.7); 
+    color: rgb(193, 190, 178);
+    padding: 10px 0;
+
+}
+
+.buttons{
+    height: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px;
+    padding: 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* margin-left: 15%; */
+}
+
+.card-content {
+    padding: 15px 20px;
+}
+
+.card-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: rgb(193, 190, 178);
+}
+
+.card-content p {
+    margin: 0;
+    color: rgb(200, 200, 200);
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* évite que l'image se déforme */
+}
