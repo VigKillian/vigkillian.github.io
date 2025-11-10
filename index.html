@@ -9,11 +9,17 @@
     <title>Portfolio</title>
 </head>
 
+<script>
+    function resumeClick(){
+        
+    }
+</script>
+
 <body class="fond" style="overflow-x:hidden;">
-    <header>
-        <button class="buttons">About</button>
-        <button class="buttons">Portfolio</button>
-        <button class="buttons">Resume</button>
+    <header class="header">
+        <button class="buttons" id="linkedin"> <a href="https://fr.linkedin.com/in/killian-viguier">LinkedIn</a></button> 
+        <button class="buttons" id="github"><a href="https://github.com/VigKillian">GitHub</a></button>
+        <button class="buttons" id="resume"><a href="data/documents/cv.pdf" download>Resume</a></button>
     </header>
     <div id="portfolio-body">
 
@@ -25,11 +31,12 @@
                 3D programming and game development.</p>
         </div>
 
+        <br>
         <!-- Projects -->
 
         <div class="cards">
-            <article class="card" href="https://azouuuu.itch.io/univherbcite">
-                <img src="data/images/univherbcite.png" alt="alt_project1">
+            <article class="card" ><a href="https://azouuuu.itch.io/univherbcite">
+                <img src="data/images/univherbcite.png" alt="Univ'herbcite project cover">
 
                 <div class="card-content">
                     <h2>Univ'Herbcité</h2>
@@ -38,10 +45,11 @@
                         Learn new plants, fruits and the origin of the disaster to progress in the game.
                     </p>
                 </div>
-            </article>
+                
+            </a></article>
 
-            <article class="card" href="https://github.com/VigKillian/Projet-Raytracing">
-                <img src="data/images/raytracing.png" alt="alt_project2">
+            <article class="card" ><a href="https://github.com/VigKillian/Projet-Raytracing">
+                <img src="data/images/raytracing.png" alt="Raytracing project cover">
 
                 <div class="card-content">
                     <h2>Raytracing</h2>
@@ -50,29 +58,100 @@
                         reflection/refraction effects.
                     </p>
                 </div>
-            </article>
+            </a></article>
 
         </div>
         <div class="cards">
             <article class="card">
-                <img src="data/images/ocean_synthesis.png" alt="alt_project1">
+                <a href="https://github.com/RTheoGH/TER-Ocean">
+                <img src="data/images/ocean_synthesis.png" alt="Ocean synthesis project cover">
 
                 <div class="card-content">
                     <h2>Ocean synthesis</h2>
                     <p>
-                        Supervised research project of an ocean synthesis in Godot. Based on Tessendorf waves simulation using oceanographic spectrum, with
+                        A supervised research project of an ocean synthesis in Godot. Based on Tessendorf waves simulation using oceanographic spectrum, with
                         an implementation of a tiling and blending texture synthesis.
+                    </p>
+                </div>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="https://github.com/VigKillian/projet_mosaique">
+                <img src="data/images/mosaique.png" alt="Photo-mosaic project cover">
+
+                <div class="card-content">
+                    <h2>Photo-mosaic app</h2>
+                    <p>
+                        An app that lets the user make a photo-mosaic from any image and adjust which method to use, the size of the little images and a lot more.
+                    </p>
+                </div>
+                </a>
+            </article>
+
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <a href="https://github.com/RTheoGH/Pawformer">
+                <img src="data/images/pawformer.png" alt="Pawformer project cover">
+
+                <div class="card-content">
+                    <h2>Pawformer</h2>
+                    <p>
+                        A game engine project made in C++/OpenGL, including character control in third person, collisions management, momentum and scene tree.
+                    </p>
+                </div>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="https://ohhnyx.itch.io/aigricultor">
+                <img src="data/images/aigricultor.png" alt="AIgricultor project cover">
+
+                <div class="card-content">
+                    <h2>AIgricultor</h2>
+                    <p>
+                        A small agents-oriented self-playing game made with Godot where a dog must keep the sheeps safe in the enclosure.
+                    </p>
+                </div>
+                </a>
+            </article>
+
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <a href="https://ohhnyx.itch.io/maige-academy">
+                <img src="data/images/maigeacademy.png" alt="Maige Academy project cover">
+
+                <div class="card-content">
+                    <h2>MAIge Academy</h2>
+                    <p>
+                        A game engine project made in C++/OpenGL, including character control in third person, collisions management, momentum and scene tree.
+                    </p>
+                </div>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="data/images/gomoku.png" alt="Photo-mosaic project cover">
+
+                <div class="card-content">
+                    <h2>Gomoku mobile</h2>
+                    <p>
+                        An Android app made with Kotlin to play the board game Gomoku. The app can be played online (not anymore) or offline, against an NPC or between two players.
                     </p>
                 </div>
             </article>
 
             <article class="card">
-                <img src="data/images/Journey_home_by_Juliette_Taka.png" alt="alt_project2">
+                <img src="data/images/music_mouton.gif" alt="To be continued">
 
                 <div class="card-content">
-                    <h2 class="project-texts">Autre projet</h2>
-                    <p class="project-texts">
-                        Description rapide.
+                    <h2>To be continued...</h2>
+                    <p>
+                        Many new projects are waiting to release so stay tuned :)
                     </p>
                 </div>
             </article>
