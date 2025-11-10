@@ -134,15 +134,23 @@ footer{
 }
 
 .header {
-    width: 100%;  
     display: flex;
-    justify-content: flex-end; 
-    gap: 15px;
-    padding: 20px 20px; 
+    justify-content: space-between;  /* laisse à gauche + met les boutons à droite */
+    align-items: center;
+    padding: 20px 40px;
     box-sizing: border-box;
-    position: relative;
-    z-index: 100; 
+    width: 100%;
     background-color: rgba(10, 10, 10, 0.7);
+}
+
+.header-title {
+    margin: 0;
+    color: rgb(193, 190, 178);
+}
+
+.header-links {
+    display: flex;
+    gap: 15px; /* espace entre les boutons */
 }
 
 .buttons {
@@ -169,6 +177,4 @@ footer{
     text-decoration: none;
     color: rgb(193, 190, 178);;
 }
-
-
 
